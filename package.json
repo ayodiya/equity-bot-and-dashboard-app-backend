@@ -1,0 +1,22 @@
+{
+  "name": "equity_bot_and_dashboard_app_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon server.js"
+  },
+  "author": "devayodiya <devayodiya@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/node": "^7.3.0",
+    "@sentry/tracing": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.18"
+  }
+}

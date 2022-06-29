@@ -20,6 +20,7 @@ connectBroker()
 
 // initialize app
 const app = express()
+app.use(cors())
 
 // import routes
 const marketDataRoutes = require('./routes/marketData')
@@ -51,7 +52,6 @@ app.use('/api/marketData', marketDataRoutes)
 // The error handler must be before any other error middleware and after all controllers
 app.use(Sentry.Handlers.errorHandler())
 app.use(express.json())
-app.use(cors())
 
 // log only 4xx and 5xx responses to console
 app.use(morgan('dev', {
